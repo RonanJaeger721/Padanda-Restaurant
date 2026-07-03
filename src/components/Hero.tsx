@@ -8,7 +8,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
-  const bgImage = '/src/assets/images/padanda_hero_bg_1783105194356.jpg';
+  const bgImage = 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1600';
 
   const containerVariants = {
     hidden: { opacity: 0 },

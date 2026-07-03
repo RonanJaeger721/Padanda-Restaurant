@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { Flame, Star, Sparkles } from 'lucide-react';
 
 export default function About() {
-  const interiorImage = '/src/assets/images/padanda_interior_1783105209426.jpg';
+  const interiorImage = 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1200';
 
   return (
     <section

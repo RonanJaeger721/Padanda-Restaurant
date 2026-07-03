@@ -6,28 +6,28 @@ export default function SocialFeed() {
   const feedItems = [
     {
       id: 's1',
-      image: '/src/assets/images/padanda_oxtail_1783105224236.jpg',
+      image: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&q=80&w=600',
       likes: 1243,
       comments: 89,
       tag: '#TasteOfHome',
     },
     {
       id: 's2',
-      image: '/src/assets/images/padanda_interior_1783105209426.jpg',
+      image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=600',
       likes: 832,
       comments: 42,
       tag: '#AvondaleHarare',
     },
     {
       id: 's3',
-      image: '/src/assets/images/padanda_roadrunner_1783105237845.jpg',
+      image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=600',
       likes: 1092,
       comments: 73,
       tag: '#TraditionalCuisine',
     },
     {
       id: 's4',
-      image: '/src/assets/images/padanda_hero_bg_1783105194356.jpg',
+      image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600',
       likes: 924,
       comments: 54,
       tag: '#LuxuryDining',
@@ -155,7 +155,7 @@ export default function SocialFeed() {
 
           <div className="aspect-video rounded-xl overflow-hidden border border-gray-100 dark:border-primary/5">
             <img
-              src="/src/assets/images/padanda_oxtail_1783105224236.jpg"
+              src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&q=80&w=800"
               alt="Saturday Special Oxtail"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

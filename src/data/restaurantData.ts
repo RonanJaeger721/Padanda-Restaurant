@@ -2,10 +2,10 @@ import { MenuItem, Testimonial, GalleryItem, WhyUsItem } from '../types';
 
 // Let's use our generated images
 const IMAGES = {
-  hero: '/src/assets/images/padanda_hero_bg_1783105194356.jpg',
-  interior: '/src/assets/images/padanda_interior_1783105209426.jpg',
-  oxtail: '/src/assets/images/padanda_oxtail_1783105224236.jpg',
-  roadrunner: '/src/assets/images/padanda_roadrunner_1783105237845.jpg'
+  hero: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1200',
+  interior: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=1200',
+  oxtail: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&q=80&w=800',
+  roadrunner: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800'
 };
 
 export const menuItems: MenuItem[] = [
