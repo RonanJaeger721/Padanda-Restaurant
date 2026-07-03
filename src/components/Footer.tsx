@@ -24,8 +24,8 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
     '@type': 'Restaurant',
     'name': 'Padanda Restaurant',
     'image': [
-      'https://ais-pre-bfbeskakjz55j7rb376yzp-553982460099.europe-west2.run.app/src/assets/images/padanda_oxtail_1783105224236.jpg',
-      'https://ais-pre-bfbeskakjz55j7rb376yzp-553982460099.europe-west2.run.app/src/assets/images/padanda_roadrunner_1783105237845.jpg'
+      'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&q=80&w=800',
+      'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800'
     ],
     '@id': 'https://ais-pre-bfbeskakjz55j7rb376yzp-553982460099.europe-west2.run.app/#restaurant',
     'url': 'https://ais-pre-bfbeskakjz55j7rb376yzp-553982460099.europe-west2.run.app',
