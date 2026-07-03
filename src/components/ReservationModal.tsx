@@ -80,7 +80,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 20 }}
           transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-          className="relative w-full max-w-lg overflow-hidden rounded-2xl bg-[#FAFAF8] dark:bg-[#123024] p-8 shadow-2xl border border-secondary/20 dark:border-primary/30 z-10"
+          className="relative w-full max-w-lg overflow-hidden rounded-2xl bg-[#FAFAF8] dark:bg-forest-dark p-8 shadow-2xl border border-secondary/20 dark:border-primary/30 z-10"
         >
           {/* Close Button */}
           <button
@@ -94,7 +94,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
           {!isSubmitted ? (
             <div id="reservation-form-view">
               <div className="text-center mb-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#C79A32]">Luxury Dining</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-secondary">Luxury Dining</span>
                 <h3 className="font-serif-display text-2xl font-bold text-primary dark:text-accent mt-1">
                   Reserve Your Table
                 </h3>
@@ -262,7 +262,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
               animate={{ opacity: 1, scale: 1 }}
               className="text-center py-8"
             >
-              <div className="mx-auto h-16 w-16 bg-[#1F4D3B]/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-[#C79A32] mb-4">
+              <div className="mx-auto h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-secondary mb-4">
                 <CheckCircle size={36} />
               </div>
               <h3 className="font-serif-display text-2xl font-bold text-primary dark:text-accent mb-2">
@@ -279,7 +279,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-dark-text/50 dark:text-white/50">Dining Area:</span>
-                  <span className="font-semibold text-[#C79A32]">{formData.area}</span>
+                  <span className="font-semibold text-secondary">{formData.area}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium text-dark-text/50 dark:text-white/50">Phone Contact:</span>
@@ -290,7 +290,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
               <button
                 id="done-reservation"
                 onClick={handleReset}
-                className="px-6 py-2.5 rounded-lg bg-primary text-white font-bold text-sm shadow hover:bg-[#16382b] transition-colors cursor-pointer"
+                className="px-6 py-2.5 rounded-lg bg-primary text-white font-bold text-sm shadow hover:bg-[#222222] transition-colors cursor-pointer"
               >
                 Done
               </button>

@@ -146,12 +146,12 @@ export default function DeliveryModal({
           animate={{ x: 0 }}
           exit={{ x: '100%' }}
           transition={{ type: 'tween', duration: 0.35, ease: 'easeOut' }}
-          className="relative w-full max-w-md h-full bg-[#FAFAF8] dark:bg-[#123024] p-6 shadow-2xl border-l border-secondary/20 dark:border-primary/30 z-10 flex flex-col justify-between"
+          className="relative w-full max-w-md h-full bg-[#FAFAF8] dark:bg-forest-dark p-6 shadow-2xl border-l border-secondary/20 dark:border-primary/30 z-10 flex flex-col justify-between"
         >
           {/* Header */}
           <div className="flex items-center justify-between border-b border-gray-200 dark:border-primary/20 pb-4">
             <div className="flex items-center gap-2">
-              <ShoppingBag className="text-[#C79A32]" size={24} />
+              <ShoppingBag className="text-secondary" size={24} />
               <h3 className="font-serif-display text-xl font-bold text-primary dark:text-accent">
                 Your Padanda Cart
               </h3>
@@ -179,12 +179,12 @@ export default function DeliveryModal({
                   </p>
 
                   <div className="text-left border-t border-gray-200 dark:border-primary/15 pt-6 mt-6">
-                    <h5 className="text-xs font-bold text-[#C79A32] uppercase tracking-wider mb-3">Popular Dishes Today</h5>
+                    <h5 className="text-xs font-bold text-secondary uppercase tracking-wider mb-3">Popular Dishes Today</h5>
                     <div className="space-y-3">
                       {popularTraditional.map((item) => (
                         <div
                           key={item.id}
-                          className="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-forest-dark border border-gray-100 dark:border-primary/10 hover:border-[#C79A32]/40 transition-all shadow-sm"
+                          className="flex items-center justify-between p-3 rounded-lg bg-white dark:bg-forest-dark border border-gray-100 dark:border-primary/10 hover:border-secondary/40 transition-all shadow-sm"
                         >
                           <div className="flex items-center gap-3">
                             <img
@@ -201,7 +201,7 @@ export default function DeliveryModal({
                           <button
                             id={`add-quick-${item.id}`}
                             onClick={() => onAddQuickItem(item)}
-                            className="p-1 rounded bg-[#C79A32]/10 hover:bg-[#C79A32]/20 text-[#C79A32] transition-colors cursor-pointer"
+                            className="p-1 rounded bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors cursor-pointer"
                           >
                             <Plus size={16} />
                           </button>
@@ -227,7 +227,7 @@ export default function DeliveryModal({
                       />
                       <div className="flex-1 min-w-0">
                         <h5 className="text-xs font-bold text-dark-text dark:text-white truncate">{item.menuItem.name}</h5>
-                        <p className="text-[11px] text-[#C79A32] font-semibold mt-0.5">{item.menuItem.price}</p>
+                        <p className="text-[11px] text-secondary font-semibold mt-0.5">{item.menuItem.price}</p>
                         
                         <div className="flex items-center justify-between mt-2">
                           {/* Quantity selector */}
@@ -343,18 +343,18 @@ export default function DeliveryModal({
               animate={{ opacity: 1, scale: 1 }}
               className="flex-1 flex flex-col items-center justify-center text-center px-4 py-8"
             >
-              <div className="h-16 w-16 bg-[#1F4D3B]/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-[#C79A32] mb-4">
+              <div className="h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-secondary mb-4">
                 <CheckCircle size={36} />
               </div>
               <h3 className="font-serif-display text-2xl font-bold text-primary dark:text-accent mb-2">Order Dispatched!</h3>
               <p className="text-xs text-dark-text/70 dark:text-white/70 max-w-xs mb-6">
-                Your delivery request has been successfully processed via <span className="font-bold uppercase text-[#C79A32]">{orderType}</span>.
+                Your delivery request has been successfully processed via <span className="font-bold uppercase text-secondary">{orderType}</span>.
               </p>
 
               <div className="bg-primary/5 dark:bg-forest-dark rounded-xl p-4 text-left border border-primary/10 w-full max-w-xs space-y-2 text-xs text-dark-text/85 dark:text-white/85 mb-6">
                 <div className="flex justify-between font-bold">
                   <span>Delivery Suburb:</span>
-                  <span className="text-[#C79A32]">{formData.suburb}</span>
+                  <span className="text-secondary">{formData.suburb}</span>
                 </div>
                 <div className="flex justify-between font-semibold">
                   <span>Grand Total:</span>
@@ -368,7 +368,7 @@ export default function DeliveryModal({
               <button
                 id="done-order"
                 onClick={handleReset}
-                className="px-8 py-2.5 rounded-lg bg-primary text-white font-bold text-sm shadow hover:bg-[#16382b] transition-colors cursor-pointer"
+                className="px-8 py-2.5 rounded-lg bg-primary text-white font-bold text-sm shadow hover:bg-[#222222] transition-colors cursor-pointer"
               >
                 Clear & Back to Home
               </button>
@@ -385,7 +385,7 @@ export default function DeliveryModal({
                 </div>
                 <div className="flex justify-between">
                   <span className="flex items-center gap-1">
-                    <Truck size={14} className="text-[#C79A32]" /> Delivery Fee
+                    <Truck size={14} className="text-secondary" /> Delivery Fee
                   </span>
                   <span className="font-semibold">${deliveryFee.toFixed(2)}</span>
                 </div>

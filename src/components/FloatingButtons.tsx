@@ -38,7 +38,7 @@ export default function FloatingButtons() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             onClick={scrollToTop}
-            className="p-3.5 rounded-full bg-primary/95 dark:bg-[#C79A32] text-white dark:text-forest-dark border border-secondary/20 shadow-xl hover:scale-110 transition-transform cursor-pointer"
+            className="p-3.5 rounded-full bg-primary/95 dark:bg-secondary text-white dark:text-forest-dark border border-secondary/20 shadow-xl hover:scale-110 transition-transform cursor-pointer"
             title="Back to Top"
           >
             <ArrowUp size={18} strokeWidth={2.5} />

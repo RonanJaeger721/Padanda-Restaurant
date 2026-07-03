@@ -76,13 +76,13 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
   return (
     <section
       id="menu"
-      className="py-24 bg-white dark:bg-[#123024] border-b border-secondary/10 transition-colors duration-300"
+      className="py-24 bg-white dark:bg-forest-dark border-b border-secondary/10 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C79A32]">Interactive Digital Menu</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-secondary">Interactive Digital Menu</span>
           <h2 className="font-serif-display text-4xl sm:text-5xl font-black text-primary dark:text-accent leading-none tracking-tight">
             Explore Full Menu
           </h2>
@@ -122,7 +122,7 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                 onClick={() => handleSelectCategory(cat)}
                 className={`flex-shrink-0 px-5 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer ${
                   selectedCategory === cat
-                    ? 'bg-[#C79A32] text-white shadow-md shadow-[#C79A32]/25 scale-105'
+                    ? 'bg-secondary text-white shadow-md shadow-secondary/25 scale-105'
                     : 'bg-[#FAFAF8] text-dark-text/75 hover:bg-primary/5 dark:bg-forest-dark dark:text-white/75 dark:hover:bg-white/5 border border-gray-100 dark:border-primary/10'
                 }`}
               >
@@ -161,12 +161,12 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                       <span className="font-serif-display text-lg sm:text-xl font-bold text-primary dark:text-accent">
                         {catName}
                       </span>
-                      <span className="text-[10px] bg-primary/10 text-primary dark:bg-[#C79A32]/10 dark:text-[#C79A32] font-bold px-2.5 py-0.5 rounded-full uppercase">
+                      <span className="text-[10px] bg-primary/10 text-primary dark:bg-secondary/10 dark:text-secondary font-bold px-2.5 py-0.5 rounded-full uppercase">
                         {items.length} {items.length === 1 ? 'item' : 'items'}
                       </span>
                     </div>
                     <div>
-                      {isExpanded ? <ChevronUp size={20} className="text-[#C79A32]" /> : <ChevronDown size={20} className="text-[#C79A32]" />}
+                      {isExpanded ? <ChevronUp size={20} className="text-secondary" /> : <ChevronDown size={20} className="text-secondary" />}
                     </div>
                   </button>
 
@@ -180,7 +180,7 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white dark:bg-[#123024]/50">
+                        <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6 bg-white dark:bg-forest-dark/50">
                           {items.map((item) => (
                             <div
                               key={item.id}
@@ -191,7 +191,7 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                                 src={item.image}
                                 alt={item.name}
                                 referrerPolicy="no-referrer"
-                                className="h-20 w-20 sm:h-24 sm:w-24 rounded-lg object-cover flex-shrink-0 border border-[#C79A32]/10"
+                                className="h-20 w-20 sm:h-24 sm:w-24 rounded-lg object-cover flex-shrink-0 border border-secondary/10"
                               />
 
                               {/* Text & ordering option */}
@@ -201,11 +201,11 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                                     <h4 className="font-serif-display text-sm sm:text-base font-bold text-primary dark:text-accent truncate">
                                       {item.name}
                                     </h4>
-                                    <span className="font-serif-menu text-sm font-bold text-[#C79A32] flex-shrink-0">
+                                    <span className="font-serif-menu text-sm font-bold text-secondary flex-shrink-0">
                                       {item.price}
                                     </span>
                                   </div>
-                                  <p className="text-[11px] sm:text-xs text-dark-text/70 dark:text-white/60 font-sans leading-relaxed line-clamp-2 mt-1">
+                                  <p className="text-[11px] sm:text-xs text-dark-text/77 dark:text-white/60 font-sans leading-relaxed line-clamp-2 mt-1">
                                     {item.description}
                                   </p>
                                 </div>
@@ -229,7 +229,7 @@ export default function FullMenu({ onAddToCart }: FullMenuProps) {
                                   <button
                                     id={`menu-add-btn-${item.id}`}
                                     onClick={() => onAddToCart(item)}
-                                    className="p-1.5 px-3 rounded-lg bg-primary/5 hover:bg-primary hover:text-white dark:bg-[#C79A32]/10 dark:text-[#C79A32] dark:hover:bg-[#C79A32] dark:hover:text-forest-dark font-bold text-[10px] uppercase tracking-wider transition-colors duration-300 flex items-center gap-1 cursor-pointer border border-[#C79A32]/20"
+                                    className="p-1.5 px-3 rounded-lg bg-primary/5 hover:bg-primary hover:text-white dark:bg-secondary/10 dark:text-secondary dark:hover:bg-secondary dark:hover:text-forest-dark font-bold text-[10px] uppercase tracking-wider transition-colors duration-300 flex items-center gap-1 cursor-pointer border border-secondary/20"
                                   >
                                     <ShoppingBag size={11} />
                                     <span>Add</span>

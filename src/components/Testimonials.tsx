@@ -31,7 +31,7 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C79A32]">Guest Voices</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-secondary">Guest Voices</span>
           <h2 className="font-serif-display text-4xl sm:text-5xl font-black text-primary dark:text-accent leading-none tracking-tight">
             Loved by Our Guests
           </h2>
@@ -46,7 +46,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="max-w-md mx-auto p-4 rounded-2xl bg-[#FAFAF8] dark:bg-forest-dark border border-[#C79A32]/20 shadow-sm flex items-center justify-between gap-4"
+          className="max-w-md mx-auto p-4 rounded-2xl bg-[#FAFAF8] dark:bg-forest-dark border border-secondary/20 shadow-sm flex items-center justify-between gap-4"
         >
           <div className="flex items-center gap-3">
             {/* Google G icon styling */}
@@ -62,7 +62,7 @@ export default function Testimonials() {
             </div>
           </div>
           <div className="text-right">
-            <div className="flex items-center gap-0.5 text-[#C79A32]">
+            <div className="flex items-center gap-0.5 text-secondary">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={14} fill="currentColor" />
               ))}
@@ -73,7 +73,7 @@ export default function Testimonials() {
 
         {/* Interactive Luxury Carousel */}
         <div id="reviews-carousel" className="relative max-w-4xl mx-auto mt-12 bg-[#FAFAF8] dark:bg-forest-dark/30 border border-gray-100 dark:border-primary/10 rounded-3xl p-8 sm:p-12 shadow-md">
-          <Quote className="absolute right-8 top-8 text-[#C79A32]/10 h-32 w-32 -z-0 pointer-events-none" />
+          <Quote className="absolute right-8 top-8 text-secondary/10 h-32 w-32 -z-0 pointer-events-none" />
 
           <div className="relative z-10 min-h-[220px] flex flex-col justify-between">
             <AnimatePresence mode="wait">
@@ -87,7 +87,7 @@ export default function Testimonials() {
               >
                 {/* Stars and date */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1 text-[#C79A32]">
+                  <div className="flex items-center gap-1 text-secondary">
                     {[...Array(testimonials[activeIndex].rating)].map((_, i) => (
                       <Star key={i} size={18} fill="currentColor" />
                     ))}
@@ -108,7 +108,7 @@ export default function Testimonials() {
                     src={testimonials[activeIndex].avatar}
                     alt={testimonials[activeIndex].name}
                     referrerPolicy="no-referrer"
-                    className="h-12 w-12 rounded-full object-cover border-2 border-[#C79A32]/40"
+                    className="h-12 w-12 rounded-full object-cover border-2 border-secondary/40"
                   />
                   <div>
                     <div className="flex items-center gap-1.5">
@@ -135,7 +135,7 @@ export default function Testimonials() {
                     key={idx}
                     onClick={() => setActiveIndex(idx)}
                     className={`h-2 rounded-full transition-all cursor-pointer ${
-                      activeIndex === idx ? 'w-6 bg-[#C79A32]' : 'w-2 bg-gray-300 dark:bg-primary/20 hover:bg-gray-400'
+                      activeIndex === idx ? 'w-6 bg-secondary' : 'w-2 bg-gray-300 dark:bg-primary/20 hover:bg-gray-400'
                     }`}
                   />
                 ))}

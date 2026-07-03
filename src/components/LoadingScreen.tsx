@@ -38,7 +38,7 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="fixed inset-0 z-50 bg-[#123024] flex flex-col items-center justify-center text-white"
+          className="fixed inset-0 z-50 bg-forest-dark flex flex-col items-center justify-center text-white"
         >
           {/* Logo container with pulse animation */}
           <motion.div
@@ -58,7 +58,7 @@ export default function LoadingScreen() {
               initial={{ left: '-100%' }}
               animate={{ left: '100%' }}
               transition={{ repeat: Infinity, duration: 1.8, ease: 'linear' }}
-              className="relative h-full w-2/3 bg-gradient-to-r from-transparent via-[#C79A32] to-transparent"
+              className="relative h-full w-2/3 bg-gradient-to-r from-transparent via-secondary to-transparent"
             />
           </div>
 

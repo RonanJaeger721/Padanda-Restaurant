@@ -42,13 +42,13 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-24 bg-light-bg dark:bg-[#123024] border-b border-secondary/10 transition-colors duration-300"
+      className="py-24 bg-light-bg dark:bg-forest-dark border-b border-secondary/10 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C79A32]">Visual Feast</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-secondary">Visual Feast</span>
           <h2 className="font-serif-display text-4xl sm:text-5xl font-black text-primary dark:text-accent leading-none tracking-tight">
             Padanda Gallery
           </h2>
@@ -66,7 +66,7 @@ export default function Gallery() {
               onClick={() => setActiveFilter(filter.id)}
               className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all cursor-pointer ${
                 activeFilter === filter.id
-                  ? 'bg-primary text-white dark:bg-[#C79A32] dark:text-forest-dark'
+                  ? 'bg-primary text-white dark:bg-secondary dark:text-forest-dark'
                   : 'bg-white text-dark-text/70 dark:bg-forest-dark dark:text-white/70 border border-gray-100 dark:border-primary/10 hover:bg-primary/5'
               }`}
             >
@@ -108,7 +108,7 @@ export default function Gallery() {
                   <Maximize2 size={14} />
                 </div>
                 <div className="space-y-1 text-left">
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#C79A32]">
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-secondary">
                     {item.category}
                   </span>
                   <p className="text-xs font-medium font-serif-display leading-tight">
@@ -164,7 +164,7 @@ export default function Gallery() {
                 
                 {/* Text description inside lightbox */}
                 <div className="text-center text-white space-y-1 mt-2">
-                  <p className="text-sm font-semibold font-serif-display text-[#C79A32]">
+                  <p className="text-sm font-semibold font-serif-display text-secondary">
                     {filteredItems[lightboxIndex].caption}
                   </p>
                   <p className="text-[10px] uppercase font-bold tracking-widest text-white/50 font-sans">

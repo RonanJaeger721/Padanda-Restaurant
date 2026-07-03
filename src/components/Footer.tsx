@@ -66,7 +66,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
   return (
     <footer
       id="main-footer"
-      className="bg-[#123024] text-white py-16 border-t border-secondary/20"
+      className="bg-forest-dark text-white py-16 border-t border-secondary/20"
     >
       {/* Inject SEO Schema Markup */}
       <script
@@ -89,22 +89,22 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
 
           {/* Contact details */}
           <div className="space-y-4">
-            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-[#C79A32]">
+            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-secondary">
               Visit & Call
             </h4>
             <div className="space-y-3 text-xs text-white/70 font-sans">
               <div className="flex gap-2 items-start">
-                <MapPin size={16} className="text-[#C79A32] flex-shrink-0 mt-0.5" />
+                <MapPin size={16} className="text-secondary flex-shrink-0 mt-0.5" />
                 <span>70 Cork Road, Avondale, Harare, Zimbabwe (100m from Kensington Shops)</span>
               </div>
               <div className="flex gap-2 items-center">
-                <Phone size={14} className="text-[#C79A32] flex-shrink-0" />
+                <Phone size={14} className="text-secondary flex-shrink-0" />
                 <a href="tel:+263783157174" className="hover:text-white transition-colors">
                   +263 783 157174
                 </a>
               </div>
               <div className="flex gap-2 items-center">
-                <Phone size={14} className="text-[#C79A32] flex-shrink-0" />
+                <Phone size={14} className="text-secondary flex-shrink-0" />
                 <a href="tel:+263717818658" className="hover:text-white transition-colors">
                   +263 717 818658
                 </a>
@@ -114,7 +114,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-[#C79A32]">
+            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-secondary">
               Quick Links
             </h4>
             <ul className="space-y-2 text-xs font-bold text-white/75 font-sans">
@@ -122,7 +122,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
                 <button
                   id="footer-link-menu"
                   onClick={() => handleScrollTo('menu')}
-                  className="hover:text-[#C79A32] transition-colors uppercase tracking-wider cursor-pointer"
+                  className="hover:text-secondary transition-colors uppercase tracking-wider cursor-pointer"
                 >
                   Explore Menu
                 </button>
@@ -131,7 +131,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
                 <button
                   id="footer-link-reserve"
                   onClick={onOpenReserve}
-                  className="hover:text-[#C79A32] transition-colors uppercase tracking-wider cursor-pointer"
+                  className="hover:text-secondary transition-colors uppercase tracking-wider cursor-pointer"
                 >
                   Table Reservations
                 </button>
@@ -140,7 +140,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
                 <button
                   id="footer-link-delivery"
                   onClick={onOpenDelivery}
-                  className="hover:text-[#C79A32] transition-colors uppercase tracking-wider cursor-pointer"
+                  className="hover:text-secondary transition-colors uppercase tracking-wider cursor-pointer"
                 >
                   Order Delivery
                 </button>
@@ -149,7 +149,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
                 <button
                   id="footer-link-gallery"
                   onClick={() => handleScrollTo('gallery')}
-                  className="hover:text-[#C79A32] transition-colors uppercase tracking-wider cursor-pointer"
+                  className="hover:text-secondary transition-colors uppercase tracking-wider cursor-pointer"
                 >
                   Photo Gallery
                 </button>
@@ -158,7 +158,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
                 <button
                   id="footer-link-contact"
                   onClick={() => handleScrollTo('contact')}
-                  className="hover:text-[#C79A32] transition-colors uppercase tracking-wider cursor-pointer"
+                  className="hover:text-secondary transition-colors uppercase tracking-wider cursor-pointer"
                 >
                   Contact Info
                 </button>
@@ -168,7 +168,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
 
           {/* Social connections */}
           <div className="space-y-4">
-            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-[#C79A32]">
+            <h4 className="font-serif-display text-sm font-bold uppercase tracking-widest text-secondary">
               Connect With Us
             </h4>
             <p className="text-xs text-white/60 font-sans leading-relaxed">
@@ -214,7 +214,7 @@ export default function Footer({ onOpenReserve, onOpenDelivery }: FooterProps) {
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40 font-sans">
           <p>© 2026 Padanda Restaurant. All Rights Reserved. Crafted with pride in Avondale.</p>
           <p className="flex items-center gap-1">
-            Made with <Heart size={10} className="text-[#C79A32] fill-current" /> for Zimbabwe
+            Made with <Heart size={10} className="text-secondary fill-current" /> for Zimbabwe
           </p>
         </div>
 

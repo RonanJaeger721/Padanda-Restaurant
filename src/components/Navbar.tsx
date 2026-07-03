@@ -81,7 +81,7 @@ export default function Navbar({
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'glass shadow-md py-2 border-b border-[#C79A32]/20'
+          ? 'glass shadow-md py-2 border-b border-secondary/20'
           : 'bg-transparent py-4'
       }`}
     >
@@ -100,17 +100,17 @@ export default function Navbar({
               onClick={() => scrollToSection(link.id)}
               className={`relative py-2 text-xs font-bold tracking-widest uppercase transition-colors duration-300 cursor-pointer ${
                 activeSection === link.id
-                  ? 'text-primary dark:text-[#C79A32]'
+                  ? 'text-primary dark:text-secondary'
                   : isScrolled
-                  ? 'text-dark-text/75 hover:text-primary dark:text-white/75 dark:hover:text-[#C79A32]'
-                  : 'text-white/85 hover:text-white dark:text-white/85 dark:hover:text-[#C79A32]'
+                  ? 'text-dark-text/75 hover:text-primary dark:text-white/75 dark:hover:text-secondary'
+                  : 'text-white/85 hover:text-white dark:text-white/85 dark:hover:text-secondary'
               }`}
             >
               {link.label}
               {activeSection === link.id && (
                 <motion.div
                   layoutId="activeUnderline"
-                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#C79A32]"
+                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-secondary"
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 />
               )}
@@ -146,7 +146,7 @@ export default function Navbar({
           >
             <ShoppingBag size={18} />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#C79A32] text-white font-bold text-[9px] h-5 w-5 rounded-full flex items-center justify-center animate-pulse border-2 border-[#FAFAF8] dark:border-[#123024]">
+              <span className="absolute -top-1 -right-1 bg-secondary text-white font-bold text-[9px] h-5 w-5 rounded-full flex items-center justify-center animate-pulse border-2 border-[#FAFAF8] dark:border-forest-dark">
                 {cartCount}
               </span>
             )}
@@ -155,10 +155,10 @@ export default function Navbar({
           {/* Sticky Book a Table Button */}
           <motion.button
             id="sticky-reserve-button"
-            whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(199, 154, 50, 0.3)' }}
+            whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(240, 90, 40, 0.3)' }}
             whileTap={{ scale: 0.95 }}
             onClick={onOpenReserve}
-            className="flex items-center gap-2 rounded-full bg-primary hover:bg-[#16382b] text-white dark:bg-[#C79A32] dark:hover:bg-[#b08525] font-bold text-xs tracking-widest uppercase px-5 py-2.5 shadow transition-all cursor-pointer"
+            className="flex items-center gap-2 rounded-full bg-primary hover:bg-[#222222] text-white dark:bg-secondary dark:hover:bg-orange-600 font-bold text-xs tracking-widest uppercase px-5 py-2.5 shadow transition-all cursor-pointer"
           >
             <Calendar size={14} />
             <span>Book a Table</span>
@@ -188,7 +188,7 @@ export default function Navbar({
           >
             <ShoppingBag size={18} />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#C79A32] text-white font-bold text-[9px] h-4 w-4 rounded-full flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-secondary text-white font-bold text-[9px] h-4 w-4 rounded-full flex items-center justify-center">
                 {cartCount}
               </span>
             )}
@@ -228,7 +228,7 @@ export default function Navbar({
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
-              className="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-[#FAFAF8] dark:bg-[#123024] p-6 shadow-2xl flex flex-col justify-between border-l border-secondary/20"
+              className="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-[#FAFAF8] dark:bg-forest-dark p-6 shadow-2xl flex flex-col justify-between border-l border-secondary/20"
             >
               <div className="space-y-6">
                 <div className="flex items-center justify-between border-b border-gray-200 dark:border-primary/20 pb-4">
@@ -251,7 +251,7 @@ export default function Navbar({
                       onClick={() => scrollToSection(link.id)}
                       className={`text-left py-2 px-3 rounded-lg font-bold text-sm tracking-wider uppercase transition-colors ${
                         activeSection === link.id
-                          ? 'bg-[#C79A32]/10 text-[#C79A32]'
+                          ? 'bg-secondary/10 text-secondary'
                           : 'text-dark-text/70 hover:bg-black/5 dark:text-white/70 dark:hover:bg-white/5'
                       }`}
                     >
@@ -269,7 +269,7 @@ export default function Navbar({
                     setMobileMenuOpen(false);
                     onOpenReserve();
                   }}
-                  className="w-full rounded-lg bg-primary hover:bg-[#16382b] text-white font-bold py-3 text-xs tracking-widest uppercase flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full rounded-lg bg-primary hover:bg-[#222222] text-white font-bold py-3 text-xs tracking-widest uppercase flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Calendar size={14} />
                   <span>Reserve Table</span>
@@ -281,7 +281,7 @@ export default function Navbar({
                     setMobileMenuOpen(false);
                     onOpenDelivery();
                   }}
-                  className="w-full rounded-lg bg-white border border-[#C79A32] text-[#C79A32] font-bold py-3 text-xs tracking-widest uppercase flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full rounded-lg bg-white border border-secondary text-secondary font-bold py-3 text-xs tracking-widest uppercase flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <ShoppingBag size={14} />
                   <span>Order Delivery</span>

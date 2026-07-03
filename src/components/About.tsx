@@ -26,7 +26,7 @@ export default function About() {
             className="relative"
           >
             {/* Main Lifestyle Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#C79A32]/20 aspect-video lg:aspect-square group">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-secondary/20 aspect-video lg:aspect-square group">
               <img
                 src={interiorImage}
                 alt="Padanda Luxury Interior"
@@ -36,15 +36,15 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
               
               {/* Overlay Badge */}
-              <div className="absolute bottom-6 left-6 bg-primary/95 dark:bg-[#C79A32]/95 backdrop-blur-md px-4 py-2.5 rounded-lg border border-secondary/20 shadow-lg text-white">
+              <div className="absolute bottom-6 left-6 bg-primary/95 dark:bg-secondary/95 backdrop-blur-md px-4 py-2.5 rounded-lg border border-secondary/20 shadow-lg text-white">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-secondary block">Est. In Harare</span>
                 <span className="text-sm font-bold font-serif-display">Padanda Avondale</span>
               </div>
             </div>
 
             {/* Decorative background blocks to represent high craftsmanship */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 dark:bg-[#C79A32]/5 rounded-2xl -z-1 border border-primary/10 dark:border-secondary/10" />
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/5 dark:bg-[#C79A32]/5 rounded-3xl -z-1 border border-primary/10 dark:border-secondary/10" />
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/5 dark:bg-secondary/5 rounded-2xl -z-1 border border-primary/10 dark:border-secondary/10" />
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/5 dark:bg-secondary/5 rounded-3xl -z-1 border border-primary/10 dark:border-secondary/10" />
           </motion.div>
 
           {/* About Copy Column (Right Column) */}
@@ -57,14 +57,14 @@ export default function About() {
             className="space-y-6"
           >
             {/* Header Badge */}
-            <div className="flex items-center gap-2 text-[#C79A32]">
+            <div className="flex items-center gap-2 text-secondary">
               <Sparkles size={16} />
               <span className="text-xs font-extrabold uppercase tracking-[0.3em]">Our Story</span>
             </div>
 
             {/* Big Headline */}
             <h2 className="font-serif-display text-4xl sm:text-5xl font-black text-primary dark:text-accent leading-tight tracking-tight">
-              Where <span className="text-[#C79A32] italic">Zimbabwe</span> Eats.
+              Where <span className="text-secondary italic">Zimbabwe</span> Eats.
             </h2>
 
             {/* Story Paragraphs */}
@@ -83,7 +83,7 @@ export default function About() {
             {/* Micro details / values */}
             <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-200 dark:border-primary/20">
               <div className="flex items-start gap-2.5">
-                <div className="p-1.5 rounded-md bg-[#C79A32]/10 text-[#C79A32]">
+                <div className="p-1.5 rounded-md bg-secondary/10 text-secondary">
                   <Flame size={18} />
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export default function About() {
               </div>
 
               <div className="flex items-start gap-2.5">
-                <div className="p-1.5 rounded-md bg-primary/10 text-primary dark:text-[#C79A32] dark:bg-white/10">
+                <div className="p-1.5 rounded-md bg-primary/10 text-primary dark:text-secondary dark:bg-white/10">
                   <Star size={18} />
                 </div>
                 <div>

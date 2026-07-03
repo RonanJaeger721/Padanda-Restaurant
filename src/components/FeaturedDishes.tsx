@@ -15,14 +15,14 @@ export default function FeaturedDishes({ onAddToCart }: FeaturedDishesProps) {
   return (
     <section
       id="featured"
-      className="py-24 bg-light-bg dark:bg-[#123024] border-b border-secondary/10 transition-colors duration-300"
+      className="py-24 bg-light-bg dark:bg-forest-dark border-b border-secondary/10 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-4xl">
           <div className="space-y-4">
-            <div className="flex items-center gap-2 text-[#C79A32]">
+            <div className="flex items-center gap-2 text-secondary">
               <Flame size={16} />
               <span className="text-xs font-bold uppercase tracking-[0.3em]">Signature Plates</span>
             </div>
@@ -62,7 +62,7 @@ export default function FeaturedDishes({ onAddToCart }: FeaturedDishesProps) {
 
                 {/* Popular Badge */}
                 {item.isPopular && (
-                  <div className="absolute top-4 left-4 bg-[#C79A32] text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase flex items-center gap-1">
+                  <div className="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase flex items-center gap-1">
                     <Star size={10} fill="currentColor" />
                     <span>Highly Popular</span>
                   </div>
@@ -78,10 +78,10 @@ export default function FeaturedDishes({ onAddToCart }: FeaturedDishesProps) {
               <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-serif-display text-xl font-bold text-primary dark:text-accent group-hover:text-[#C79A32] transition-colors duration-300">
+                    <h3 className="font-serif-display text-xl font-bold text-primary dark:text-accent group-hover:text-secondary transition-colors duration-300">
                       {item.name}
                     </h3>
-                    <span className="font-serif-menu text-lg font-bold text-[#C79A32]">
+                    <span className="font-serif-menu text-lg font-bold text-secondary">
                       {item.price}
                     </span>
                   </div>
@@ -96,7 +96,7 @@ export default function FeaturedDishes({ onAddToCart }: FeaturedDishesProps) {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => onAddToCart(item)}
-                  className="w-full rounded-xl bg-primary hover:bg-[#16382b] text-white font-bold text-xs tracking-widest uppercase py-3 px-4 flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer border border-[#C79A32]/25"
+                  className="w-full rounded-xl bg-primary hover:bg-[#222222] text-white font-bold text-xs tracking-widest uppercase py-3 px-4 flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer border border-secondary/25"
                 >
                   <ShoppingBag size={14} className="text-secondary" />
                   <span>Order Delivery</span>

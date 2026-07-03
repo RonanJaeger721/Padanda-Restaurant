@@ -51,14 +51,14 @@ export default function SocialFeed() {
   return (
     <section
       id="social"
-      className="py-24 bg-light-bg dark:bg-[#123024] border-b border-secondary/10 transition-colors duration-300"
+      className="py-24 bg-light-bg dark:bg-forest-dark border-b border-secondary/10 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-4 text-left">
-            <div className="flex items-center gap-2 text-[#C79A32]">
+            <div className="flex items-center gap-2 text-secondary">
               <Sparkles size={16} />
               <span className="text-xs font-bold uppercase tracking-[0.3em]">Join Our Circle</span>
             </div>
@@ -125,7 +125,7 @@ export default function SocialFeed() {
                     <MessageCircle size={16} fill="white" /> {item.comments}
                   </span>
                 </div>
-                <span className="text-[10px] font-bold text-[#C79A32] tracking-wider uppercase">
+                <span className="text-[10px] font-bold text-secondary tracking-wider uppercase">
                   {item.tag}
                 </span>
               </div>

@@ -13,7 +13,7 @@ export default function Delivery({ onOpenDelivery }: DeliveryProps) {
       className="relative py-24 bg-primary dark:bg-forest-dark border-b border-secondary/15 overflow-hidden text-white"
     >
       {/* Absolute decorative textures */}
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C79A32_1.5px,transparent_1.5px)] [background-size:24px_24px] pointer-events-none" />
+      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F05A28_1.5px,transparent_1.5px)] [background-size:24px_24px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -21,7 +21,7 @@ export default function Delivery({ onOpenDelivery }: DeliveryProps) {
           {/* Banner Copy (Left Column) */}
           <div className="space-y-6 text-left">
             {/* Header Tag */}
-            <div className="flex items-center gap-2 text-[#C79A32]">
+            <div className="flex items-center gap-2 text-secondary">
               <Truck size={18} />
               <span className="text-xs font-bold uppercase tracking-[0.3em]">Harare-wide Delivery</span>
             </div>
@@ -39,17 +39,17 @@ export default function Delivery({ onOpenDelivery }: DeliveryProps) {
             {/* Distinct bullet checklist */}
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-md">
               <div className="space-y-1">
-                <span className="h-2 w-2 rounded-full bg-[#C79A32] inline-block mb-1" />
+                <span className="h-2 w-2 rounded-full bg-secondary inline-block mb-1" />
                 <h4 className="text-xs font-bold uppercase tracking-wider text-white">Fast.</h4>
                 <p className="text-[10px] text-white/50">Couriered in under 45 mins</p>
               </div>
               <div className="space-y-1">
-                <span className="h-2 w-2 rounded-full bg-[#C79A32] inline-block mb-1" />
+                <span className="h-2 w-2 rounded-full bg-secondary inline-block mb-1" />
                 <h4 className="text-xs font-bold uppercase tracking-wider text-white">Fresh.</h4>
                 <p className="text-[10px] text-white/50">Sealed piping hot in thermal boxes</p>
               </div>
               <div className="space-y-1">
-                <span className="h-2 w-2 rounded-full bg-[#C79A32] inline-block mb-1" />
+                <span className="h-2 w-2 rounded-full bg-secondary inline-block mb-1" />
                 <h4 className="text-xs font-bold uppercase tracking-wider text-white">Reliable.</h4>
                 <p className="text-[10px] text-white/50">Trusted drivers with real tracking</p>
               </div>
@@ -77,7 +77,7 @@ export default function Delivery({ onOpenDelivery }: DeliveryProps) {
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-xs sm:text-sm tracking-widest uppercase px-8 py-3.5 backdrop-blur-sm transition-all"
               >
-                <Phone size={16} className="text-[#C79A32]" />
+                <Phone size={16} className="text-secondary" />
                 <span>Call to Order</span>
               </motion.a>
             </div>
@@ -92,7 +92,7 @@ export default function Delivery({ onOpenDelivery }: DeliveryProps) {
               viewport={{ once: true }}
               className="relative p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 max-w-sm w-full space-y-6 shadow-2xl"
             >
-              <h3 className="font-serif-display text-lg font-bold text-[#C79A32] text-center uppercase tracking-widest border-b border-white/10 pb-3">
+              <h3 className="font-serif-display text-lg font-bold text-secondary text-center uppercase tracking-widest border-b border-white/10 pb-3">
                 How It Works
               </h3>
 

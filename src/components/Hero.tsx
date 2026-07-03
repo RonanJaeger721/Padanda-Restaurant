@@ -71,11 +71,11 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
       />
 
       {/* Earthy Dark Green & Gold Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#123024]/90 via-black/50 to-transparent z-1" />
+      <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/90 via-black/50 to-transparent z-1" />
       <div className="absolute inset-0 bg-black/30 z-1" />
 
       {/* Floating Shona/Traditional Texture accents */}
-      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#FAFAF8] dark:from-[#123024] to-transparent z-2 pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#FAFAF8] dark:from-forest-dark to-transparent z-2 pointer-events-none" />
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-12">
@@ -87,11 +87,11 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
         >
           {/* Subtitle Accent */}
           <motion.div variants={itemVariants} className="flex items-center justify-center gap-2">
-            <span className="h-[1px] w-8 bg-[#C79A32]" />
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.4em] text-[#C79A32]">
+            <span className="h-[1px] w-8 bg-secondary" />
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.4em] text-secondary">
               Welcome to Padanda Restaurant
             </span>
-            <span className="h-[1px] w-8 bg-[#C79A32]" />
+            <span className="h-[1px] w-8 bg-secondary" />
           </motion.div>
 
           {/* Main Massive Title */}
@@ -99,7 +99,7 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
             variants={itemVariants}
             className="font-serif-display text-4xl sm:text-6xl md:text-8xl font-black tracking-tight leading-none text-white max-w-4xl mx-auto"
           >
-            Authentic <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#DFB251] to-[#C79A32]">Zimbabwean</span> Cuisine
+            Authentic <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#FF7A43] to-secondary">Zimbabwean</span> Cuisine
           </motion.h1>
 
           {/* Slogan */}
@@ -124,9 +124,9 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
                 key={idx}
                 variants={textFloatVariants}
                 animate="animate"
-                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-3 flex flex-col justify-center items-center transition-all duration-300 hover:bg-white/10 hover:border-[#C79A32]/40"
+                className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-3 flex flex-col justify-center items-center transition-all duration-300 hover:bg-white/10 hover:border-secondary/40"
               >
-                <span className="text-sm font-bold text-[#C79A32]">{tag.text}</span>
+                <span className="text-sm font-bold text-secondary">{tag.text}</span>
                 <span className="text-[10px] text-white/60 tracking-wider font-sans mt-0.5 uppercase">
                   {tag.desc}
                 </span>
@@ -142,10 +142,10 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
             {/* Reserve Table Popup Trigger */}
             <motion.button
               id="hero-reserve-button"
-              whileHover={{ scale: 1.05, boxShadow: '0 10px 25px rgba(199, 154, 50, 0.4)' }}
+              whileHover={{ scale: 1.05, boxShadow: '0 10px 25px rgba(240, 90, 40, 0.4)' }}
               whileTap={{ scale: 0.95 }}
               onClick={onOpenReserve}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-[#C79A32] hover:bg-[#b08525] text-white font-bold text-xs sm:text-sm tracking-widest uppercase px-8 py-4 shadow-xl transition-all cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-secondary hover:bg-orange-600 text-white font-bold text-xs sm:text-sm tracking-widest uppercase px-8 py-4 shadow-xl transition-all cursor-pointer"
             >
               <Calendar size={16} />
               <span>Reserve a Table</span>
@@ -159,7 +159,7 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
               onClick={onOpenDelivery}
               className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white/10 hover:bg-white/20 border-2 border-white/20 text-white font-bold text-xs sm:text-sm tracking-widest uppercase px-8 py-3.5 backdrop-blur-sm transition-all cursor-pointer"
             >
-              <ShoppingBag size={16} className="text-[#C79A32]" />
+              <ShoppingBag size={16} className="text-secondary" />
               <span>Order Delivery</span>
             </motion.button>
           </motion.div>
@@ -172,7 +172,7 @@ export default function Hero({ onOpenReserve, onOpenDelivery }: HeroProps) {
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         onClick={handleScrollDown}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer text-[#C79A32] hover:text-white transition-colors p-2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 cursor-pointer text-secondary hover:text-white transition-colors p-2"
       >
         <ChevronDown size={32} strokeWidth={1.5} />
       </motion.div>

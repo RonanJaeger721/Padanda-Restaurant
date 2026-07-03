@@ -59,7 +59,7 @@ export default function LocationContact() {
         
         {/* Section Header */}
         <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#C79A32]">Find Us</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-secondary">Find Us</span>
           <h2 className="font-serif-display text-4xl sm:text-5xl font-black text-primary dark:text-accent leading-none tracking-tight">
             Location & Contacts
           </h2>
@@ -78,7 +78,7 @@ export default function LocationContact() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Opening Hours Card */}
               <div className="rounded-2xl bg-[#FAFAF8] dark:bg-forest-dark border border-gray-100 dark:border-primary/20 p-6 space-y-4 shadow-sm">
-                <div className="flex items-center gap-2 text-[#C79A32]">
+                <div className="flex items-center gap-2 text-secondary">
                   <Clock size={18} />
                   <h3 className="font-serif-display text-base font-bold text-primary dark:text-accent uppercase tracking-wider">
                     Opening Hours
@@ -90,7 +90,7 @@ export default function LocationContact() {
                     <span>Monday - Sunday</span>
                     <span>07:00 AM - 08:00 PM</span>
                   </div>
-                  <p className="text-[10px] text-[#C79A32] italic font-medium mt-1">
+                  <p className="text-[10px] text-secondary italic font-medium mt-1">
                     * Open daily, including public holidays.
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function LocationContact() {
 
               {/* Contact Details Card */}
               <div className="rounded-2xl bg-[#FAFAF8] dark:bg-forest-dark border border-gray-100 dark:border-primary/20 p-6 space-y-4 shadow-sm">
-                <div className="flex items-center gap-2 text-primary dark:text-[#C79A32]">
+                <div className="flex items-center gap-2 text-primary dark:text-secondary">
                   <Phone size={18} />
                   <h3 className="font-serif-display text-base font-bold text-primary dark:text-accent uppercase tracking-wider">
                     Contact Hotline
@@ -108,13 +108,13 @@ export default function LocationContact() {
                 <div className="space-y-2 text-xs text-dark-text dark:text-white font-sans">
                   <div className="flex flex-col gap-1">
                     <span className="text-[10px] text-dark-text/50 dark:text-white/50 uppercase font-bold tracking-wider">Primary Phone:</span>
-                    <a href="tel:+263783157174" className="font-bold hover:text-[#C79A32] transition-colors">
+                    <a href="tel:+263783157174" className="font-bold hover:text-secondary transition-colors">
                       +263 783 157174
                     </a>
                   </div>
                   <div className="flex flex-col gap-1">
                     <span className="text-[10px] text-dark-text/50 dark:text-white/50 uppercase font-bold tracking-wider">Alternative:</span>
-                    <a href="tel:+263717818658" className="font-bold hover:text-[#C79A32] transition-colors">
+                    <a href="tel:+263717818658" className="font-bold hover:text-secondary transition-colors">
                       +263 717 818658
                     </a>
                   </div>
@@ -124,7 +124,7 @@ export default function LocationContact() {
 
             {/* Address callout */}
             <div className="flex items-start gap-3 p-4 rounded-xl bg-primary/5 dark:bg-white/5 border border-primary/10 dark:border-white/10">
-              <MapPin className="text-[#C79A32] flex-shrink-0 mt-0.5" size={20} />
+              <MapPin className="text-secondary flex-shrink-0 mt-0.5" size={20} />
               <div className="space-y-1">
                 <h4 className="text-xs font-bold text-dark-text dark:text-white uppercase tracking-wider">
                   Avondale Sanctuary
@@ -132,7 +132,7 @@ export default function LocationContact() {
                 <p className="text-xs sm:text-sm text-dark-text/80 dark:text-white/80">
                   70 Cork Road, Avondale, Harare, Zimbabwe.
                 </p>
-                <p className="text-[11px] text-[#C79A32] font-semibold">
+                <p className="text-[11px] text-secondary font-semibold">
                   * Located approximately 100 metres from Kensington Shops.
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function LocationContact() {
               <a
                 id="contact-call-now"
                 href="tel:+263783157174"
-                className="p-3 rounded-xl bg-primary hover:bg-[#16382b] text-white font-bold text-[11px] uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 shadow transition-all"
+                className="p-3 rounded-xl bg-primary hover:bg-[#222222] text-white font-bold text-[11px] uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 shadow transition-all"
               >
                 <Phone size={16} />
                 <span>Call Now</span>
@@ -183,7 +183,7 @@ export default function LocationContact() {
                 href="https://maps.google.com/?q=70%20Cork%20Road,%20Avondale,%20Harare,%20Zimbabwe"
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 rounded-xl bg-white border border-[#C79A32] hover:bg-gray-50 text-[#C79A32] font-bold text-[11px] uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 shadow transition-all"
+                className="p-3 rounded-xl bg-white border border-secondary hover:bg-gray-50 text-secondary font-bold text-[11px] uppercase tracking-wider flex flex-col items-center justify-center gap-1.5 shadow transition-all"
               >
                 <Compass size={16} />
                 <span>Directions</span>
@@ -197,7 +197,7 @@ export default function LocationContact() {
             {!submitted ? (
               <div id="contact-form-view" className="space-y-6">
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#C79A32]">Send Message</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-secondary">Send Message</span>
                   <h3 className="font-serif-display text-2xl font-bold text-primary dark:text-accent">
                     We'd Love to Hear From You
                   </h3>
@@ -265,7 +265,7 @@ export default function LocationContact() {
                     whileTap={{ scale: 0.98 }}
                     type="submit"
                     disabled={loading}
-                    className="w-full rounded-xl bg-primary hover:bg-[#16382b] text-white font-bold py-3.5 text-xs tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg cursor-pointer mt-4"
+                    className="w-full rounded-xl bg-primary hover:bg-[#222222] text-white font-bold py-3.5 text-xs tracking-widest uppercase flex items-center justify-center gap-2 shadow-lg cursor-pointer mt-4"
                   >
                     {loading ? (
                       <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
@@ -285,7 +285,7 @@ export default function LocationContact() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-12 space-y-4"
               >
-                <div className="mx-auto h-16 w-16 bg-[#1F4D3B]/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-[#C79A32]">
+                <div className="mx-auto h-16 w-16 bg-secondary/10 rounded-full flex items-center justify-center text-primary dark:bg-white/10 dark:text-secondary">
                   <CheckCircle size={36} />
                 </div>
                 <h3 className="font-serif-display text-2xl font-bold text-primary dark:text-accent">
@@ -298,7 +298,7 @@ export default function LocationContact() {
                 <button
                   id="reset-contact-form"
                   onClick={handleResetForm}
-                  className="px-6 py-2 rounded-xl bg-primary text-white font-bold text-xs uppercase tracking-wider shadow hover:bg-[#16382b] transition-colors cursor-pointer mt-4"
+                  className="px-6 py-2 rounded-xl bg-primary text-white font-bold text-xs uppercase tracking-wider shadow hover:bg-[#222222] transition-colors cursor-pointer mt-4"
                 >
                   Send another message
                 </button>

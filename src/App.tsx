@@ -108,7 +108,7 @@ export default function App() {
   const cartCount = cart.reduce((acc, curr) => acc + curr.quantity, 0);
 
   return (
-    <div className="relative min-h-screen bg-light-bg dark:bg-[#123024] text-dark-text dark:text-white transition-colors duration-300 font-sans">
+    <div className="relative min-h-screen bg-light-bg dark:bg-forest-dark text-dark-text dark:text-white transition-colors duration-300 font-sans">
       
       {/* 1. Initial Elegant Proverb Loading Screen */}
       <LoadingScreen />

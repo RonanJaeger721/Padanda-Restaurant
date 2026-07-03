@@ -2,13 +2,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1F4D3B;
-  --color-secondary: #C79A32;
-  --color-accent: #F8F4EC;
-  --color-dark-text: #222222;
+  --color-primary: #111111;
+  --color-secondary: #F05A28;
+  --color-accent: #FDFBF7;
+  --color-dark-text: #1A1A1A;
   --color-light-bg: #FAFAF8;
-  --color-forest-dark: #123024;
-  --color-gold-light: #DFB251;
+  --color-forest-dark: #0F0F0F;
+  --color-gold-light: #FF7A43;
   
   --font-serif-display: "Playfair Display", serif;
   --font-serif-menu: "Cormorant Garamond", serif;
@@ -36,14 +36,14 @@ body {
   background: #f1f1f1;
 }
 .dark ::-webkit-scrollbar-track {
-  background: #123024;
+  background: #0F0F0F;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C79A32;
+  background: #F05A28;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b08525;
+  background: #FF7A43;
 }
 
 /* Glassmorphism utility card */
@@ -54,10 +54,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .dark .glass-card {
-  background: rgba(18, 48, 36, 0.4);
+  background: rgba(15, 15, 15, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(199, 154, 50, 0.1);
+  border: 1px solid rgba(240, 90, 40, 0.15);
 }
 
 .glass {
@@ -67,14 +67,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .dark .glass {
-  background: rgba(18, 48, 36, 0.7);
+  background: rgba(15, 15, 15, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(199, 154, 50, 0.15);
+  border: 1px solid rgba(240, 90, 40, 0.2);
 }
 
 .african-pattern {
-  background-image: radial-gradient(#C79A32 0.5px, transparent 0.5px);
+  background-image: radial-gradient(#F05A28 0.5px, transparent 0.5px);
   background-size: 12px 12px;
   opacity: 0.1;
 }
