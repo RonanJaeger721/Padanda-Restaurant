@@ -1,0 +1,6 @@
+{
+  "name": "Padanda Restaurant",
+  "description": "A premium, modern, highly visual restaurant website for Padanda Restaurant in Avondale, Harare, Zimbabwe, featuring authentic Zimbabwean cuisine and warm hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
